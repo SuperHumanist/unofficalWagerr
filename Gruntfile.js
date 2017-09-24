@@ -253,6 +253,8 @@ module.exports = function (grunt) {
                 'src/js/community/module.js',
                 'src/js/community/controller.js',
 
+                'src/js/wagerr/module.js',
+
                 'src/js/portfolio/module.js',
                 'src/js/portfolio/asset.list.controller.js',
                 'src/js/portfolio/asset.transfer.controller.js',

@@ -27,7 +27,8 @@ var app = angular.module('app', [
     'app.leasing',
     'app.history',
     'app.community',
-    'app.portfolio'
+    'app.portfolio',
+    'app.wagerr'
 ]).config(AngularApplicationConfig).run(AngularApplicationRun);
 
 function AngularApplicationConfig($provide, $compileProvider, $validatorProvider, $qProvider,
