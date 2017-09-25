@@ -1211,6 +1211,19 @@
         <div id="mBB-wagerr" class="mBB-content" ng-switch-when="wagerr">
           <!-- Temporary -->
           <p>Wallet you can place bets on upcoming matches just for fun.  Bets are limited to 1000 Wagerr</p>
+          <div id="bets">
+            <div>
+              <h2 class="sectionHeader">Upcoming matches</h2>
+            </div>
+            <div>
+              <h2 class="sectionHeader">Head to head bets</h2>
+            </div>
+
+            <div>
+              <h2 class="sectionHeader">Create your bet</h2>
+            </div>
+
+          </div> <br />
           <h2 class="sectionHeader">Bet History</h2>
           <p class="centerIt">
           <div id="latestBlocks" class="wavesTable wScroll" >
@@ -1226,11 +1239,13 @@
               </thead>
               <tbody id="latestBlocksTable">
               <tr class="fade">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>NFL</td>
+                <td>Browns - Ravens</td>
+                <td>09/17/2017</td>
+                <td>Browns (40-6)</td>
+                <td class="result">
+                  <span class="win">+1000</span>
+                </td>
               </tr>
               <tr class="fade" ng-repeat="block in community.blocks | orderBy:'timestamp':true">
                 <td></td>
