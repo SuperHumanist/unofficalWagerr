@@ -1212,18 +1212,76 @@
           <!-- Temporary -->
           <p>Wallet you can place bets on upcoming matches just for fun.  Bets are limited to 1000 Wagerr</p>
           <div id="bets">
-            <div>
+            <div class="wavesTable wScroll">
               <h2 class="sectionHeader">Upcoming matches</h2>
+              <table>
+                <thead>
+                <tr class="fade">
+                  <td>Category</td>
+                  <td>Teams</td>
+                  <td>Date</td>
+                </tr>
+                </thead>
+                <tbody id="latestBlocksTable">
+                <tr class="fade">
+                  <td>NFL</td>
+                  <td>Browns - Ravens</td>
+                  <td>09/17/2017</td>
+                </tr>
+                <tr class="fade">
+                  <td>NFL</td>
+                  <td>Browns - Ravens</td>
+                  <td>09/17/2017</td>
+                </tr>
+                </tbody>
+              </table>
             </div>
-            <div>
+            <div class="wavesTable wScroll">
               <h2 class="sectionHeader">Head to head bets</h2>
+              <table>
+                <thead>
+                <tr class="fade">
+                  <td>Your opponent chose</td>
+                  <td>Amount (Wagerr)</td>
+                  <td></td>
+                </tr>
+                </thead>
+                <tbody id="latestBlocksTable">
+                <tr class="fade">
+                  <td>Texans</td>
+                  <td>1000</td>
+                  <td>Go!</td>
+                </tr>
+                <tr class="fade">
+                  <td>Bengalse</td>
+                  <td>100</td>
+                  <td>Go!</td>
+                </tr>
+                </tbody>
+              </table>
             </div>
 
-            <div>
+            <div class="wavesTable wScroll">
               <h2 class="sectionHeader">Create your bet</h2>
+              <table>
+                <thead>
+                <tr class="fade">
+                  <td>Choose your team</td>
+                  <td>Amount (Wagerr)</td>
+                  <td></td>
+                </tr>
+                </thead>
+                <tbody id="latestBlocksTable">
+                <tr class="fade">
+                  <td>Texans | Bengals</td>
+                  <td>place your bet...</td>
+                  <td>Go!</td>
+                </tr>
+                </tbody>
+              </table>
             </div>
 
-          </div> <br />
+          </div>
           <h2 class="sectionHeader">Bet History</h2>
           <p class="centerIt">
           <div id="latestBlocks" class="wavesTable wScroll" >
@@ -1247,12 +1305,14 @@
                   <span class="win">+1000</span>
                 </td>
               </tr>
-              <tr class="fade" ng-repeat="block in community.blocks | orderBy:'timestamp':true">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <tr class="fade">
+                <td>NFL</td>
+                <td>Browns - Ravens</td>
+                <td>09/17/2017</td>
+                <td>Browns (40-6)</td>
+                <td class="result">
+                  <span class="lose">-1000</span>
+                </td>
               </tr>
               </tbody>
             </table>
